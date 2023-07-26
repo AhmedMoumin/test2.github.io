@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Le jeux du QI...</title>
+<script src="/Bad Game/Javascript/EN/java.js"></script>
+    <p class="title">Le jeu du QI !</p>
+</head>
+<body style="background-color: lightgreen;">
+    <button class="btn1" id="btn" onclick="err()">Commencer  -></button>
+        <div class="container">
+           <div class="div-container">Nom -></div>
+           <div class="text-field-div-1">
+                <input type="text" class="text-field" value="NAME" id="input">
+           </div>
+
+        </div>
+    <div class="err" id="err"></div>
+    <div class="language-choosing">
+        <img src="https://cdn-icons-png.flaticon.com/128/197/197560.png" class="fr" id="FRENCH" onclick='FBTN()''> <br> <img src="https://cdn-icons-png.flaticon.com/128/197/197374.png" class="eng" id="eng" onclick="ENBTN()">
+    </div>
+    <p class="credits">
+        A game by Ahmed Moumin :D
+    </p>
+    <style>
+        .eng {
+            width: 30px;padding-left: 20px; padding-top: 10px; padding-bottom: 10px;
+        }
+        .fr:hover{
+            cursor:pointer
+        }
+        .eng:hover {
+            cursor:pointer
+        }
+        /*Every Icons French Rounded Flag and England Rounded Flag are icons dowonloded from Favicon.com*/
+        .fr {
+            width: 30px; padding-left: 20px;
+        }
+        .language-choosing {
+            border: solid black; margin-left: 1270px; padding-top: 10px; background-color: rgb(66, 180, 63); border-radius: 10px;
+            animation-name:come-in-btn3 ; animation-duration: 1s;
+        }
+         .credits {
+            position: absolute;
+            top: 600PX; font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            left: 1100px;
+         }
+        .err {
+            position: absolute;
+            top: 450px; font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; font-size: 40px; color: red;
+            left: 300px; animation-name: TITLEerr; animation-duration: 1s;
+        }
+        .text-field-div-1 {
+            position: relative;
+            top: 15px;
+            left: 110px;
+        }
+        .text-field {
+            padding-left: 10px; padding-right: 10px; padding-bottom: 10px; padding-top: 10px;
+            border-radius: 60px; border: solid black;
+        }
+        .div-container {
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            font-size: 20px; padding-left: 10px; padding-top: 10px;
+            position: absolute;
+            top: 13px;
+            left: 14px;
+        }
+        .container {
+            border: solid   black;
+            position: absolute; padding-bottom: 30px; padding-right: 150px;
+            top:290px ; border-radius: 60px; animation-name: come-in-btn2; animation-duration: 1s;
+            left:370px ; background-color: lightgreen;
+        }
+        .btn1 {
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; padding-left: 10px;padding-right: 10px; padding-top: 10px; padding-left: 10px;
+            background-color: #90ee90; padding-bottom: 10px;font-size: 30px; border: solid black;
+            border-radius: 20px; animation-name: come-in-btn1; animation-duration: 1s;
+
+            position: absolute;
+            top: 290px;
+            left:750px ;
+        }
+        .btn1:hover {
+            background-color: rgb(76, 206, 76); cursor: pointer; transition-property: all; transition-duration: 500ms;
+            transform: translateY(-10px);border: soli white; color: white;
+        }
+        .title {
+            position: absolute; font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; animation-name: TITLE; animation-duration: 1s;
+            left: 500px; top: 100px; font-size: 50PX; 
+        }
+        @font-face {
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            src: url(/Things/cardigan\ titling\ bd\ it.otf);
+        }
+        /*Credits For FONT 1 : This font was downloaded from 1001fonts.com*/
+        @keyframes TITLE {
+            from {
+                transform: translateY(-200px);
+            }
+
+            to {
+                transform: translateY(0px);
+            }
+        }
+        @keyframes come-in-btn1{
+            from {
+                transform: translateX(1000px);
+            }
+
+            to {
+                transform: translateX(0px);
+            }
+        }
+        @keyframes come-in-btn2{
+            from {
+                transform: translateX(-1000px);
+            }
+
+            to {
+                transform: translateX(0px);
+            }
+        }
+        @keyframes TITLEerr {
+            from {
+                transform: translateY(1000px);
+            }
+
+            to {
+                transform: translateY(0px);
+            }
+        }
+        @keyframes come-in-btn3{
+            from {
+                transform: translateX(1000px);
+            }
+
+            to {
+                transform: translateX(0px);
+            }
+        }
+    </style>
+</body>
+</html>
